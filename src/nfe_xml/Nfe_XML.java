@@ -1,12 +1,19 @@
 
 package nfe_xml;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -50,11 +57,11 @@ public class Nfe_XML
                             NodeList infNFeChild = nfeChild.item(j).getChildNodes();
                             
                             ///gravacao root principal e attr id
-                            Element root = docXML.createElement("infNfe");
-                            docXML.appendChild(root);
+                            Element infNfeGrava = docXML.createElement("infNfe");
+                            docXML.appendChild(infNfeGrava);
                             Attr idGrava = docXML.createAttribute("Id");
                             idGrava.setValue(id);                                        
-                            root.setAttributeNode(idGrava);                              
+                            infNfeGrava.setAttributeNode(idGrava);                              
                             
                             for (int k = 0; k < infNFeChild.getLength(); k++) 
                             {
@@ -65,13 +72,13 @@ public class Nfe_XML
                                     
                                     ///grava ide
                                     Element ideGrava = docXML.createElement("ide");
-                                    root.appendChild(ideGrava);
+                                    infNfeGrava.appendChild(ideGrava);
                                     
                                     for (int l = 0; l <ide.getLength() ; l++) 
                                     {
                                         System.out.println(ide.item(l).getNodeName()+": "+ide.item(l).getTextContent());
                                         
-                                        ///gravacao
+                                        ///gravacao child ide
                                         Element ideChildGrava = docXML.createElement(ide.item(l).getNodeName());
                                         ideChildGrava.appendChild(docXML.createTextNode(ide.item(l).getTextContent()));
                                         ideGrava.appendChild(ideChildGrava);
@@ -86,15 +93,29 @@ public class Nfe_XML
 
                                     NodeList prod = infNFeChild.item(k).getChildNodes();
                                     
-                                    //gravacao
+                                    //gravacao de det
+                                    Element detGrava = docXML.createElement("det");
+                                    infNfeGrava.appendChild(detGrava);
+                                    Attr nItemGrava = docXML.createAttribute("nItem");
+                                    nItemGrava.setValue(idDet);                                        
+                                    detGrava.setAttributeNode(nItemGrava);
+                                    
                                     
                                     for (int h = 0; h < prod.getLength(); h++) 
                                     {
                                         if(prod.item(h).getNodeName().equals("prod")) ///entra em prod
-                                        {
+                                        {                                           
                                             NodeList prodChild = prod.item(h).getChildNodes();
+                                            
+                                            ///grava prod
+                                            Element prodGrava = docXML.createElement("prod");
+                                            detGrava.appendChild(prodGrava);
+                                            
                                             for (int g = 0; g <prodChild.getLength() ; g++) 
                                             {
+                                                Element prodChildGrava = docXML.createElement(prodChild.item(g).getNodeName());
+                                                prodChildGrava.appendChild(docXML.createTextNode(prodChild.item(g).getTextContent()));
+                                                prodGrava.appendChild(prodChildGrava);
                                                 System.out.println(prodChild.item(g).getNodeName()+": "+prodChild.item(g).getTextContent());
                                             }
                                         }                                            
@@ -104,10 +125,22 @@ public class Nfe_XML
                         }                        
                     }
                 }
-            }          
+            }
+            
+            TransformerFactory tf = TransformerFactory.newInstance();
+            Transformer t = tf.newTransformer();
+            
+            DOMSource docFonte =  new DOMSource(docXML);
+            StreamResult docFinal = new StreamResult(new File("D:\\Users\\higor\\Documents\\GitHub\\Nfe_XML\\teste.xml"));
+            
+            t.transform(docFonte, docFinal);
 
         } catch (ParserConfigurationException | SAXException | IOException ex) 
         {
+            Logger.getLogger(Nfe_XML.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (TransformerConfigurationException ex) {
+            Logger.getLogger(Nfe_XML.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (TransformerException ex) {
             Logger.getLogger(Nfe_XML.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
