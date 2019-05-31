@@ -24,6 +24,10 @@ import org.xml.sax.SAXException;
 
 public class Nfe_XML 
 {
+    public void abrirArq()
+    {
+        
+    }
     
     static void lerXML(
             boolean cUF,  boolean cNF, boolean natOp, boolean mod, boolean serie, boolean nNF, boolean dhEmi,boolean dhSaiEnt,
@@ -493,6 +497,8 @@ public class Nfe_XML
         boolean qTrib = true;
         boolean vUnTrib = true;
         boolean indTot = true;      
+        
+        
         
        FormMenu fm = new FormMenu();
        fm.setVisible(true);

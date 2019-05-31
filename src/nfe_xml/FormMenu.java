@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JFrame;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -39,6 +39,8 @@ public class FormMenu extends javax.swing.JFrame
     public FormMenu() 
     {
         initComponents();
+       
+        
     }
 
     /**
@@ -88,326 +90,358 @@ public class FormMenu extends javax.swing.JFrame
         indTot = new javax.swing.JCheckBox();
         btnEnviar = new javax.swing.JButton();
         cUF = new javax.swing.JCheckBox();
+        selectXML = new javax.swing.JButton();
+        xmlPathInit = new javax.swing.JLabel();
+        xmlPathFinal = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Extração de dados XML");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        cNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cNF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         cNF.setSelected(true);
         cNF.setText("cNF");
 
-        natOp.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        natOp.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         natOp.setSelected(true);
         natOp.setText("natOp");
 
-        mod.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        mod.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         mod.setSelected(true);
         mod.setText("mod");
 
-        serie.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        serie.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         serie.setSelected(true);
         serie.setText("serie");
 
-        nNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        nNF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         nNF.setSelected(true);
         nNF.setText("nNF");
 
-        dhEmi.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        dhEmi.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         dhEmi.setSelected(true);
         dhEmi.setText("dhEmi");
 
-        idDest.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        idDest.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         idDest.setSelected(true);
         idDest.setText("idDest");
 
-        dhSaiEnt.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        dhSaiEnt.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         dhSaiEnt.setSelected(true);
         dhSaiEnt.setText("dhSaiEnt");
 
-        tpNF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tpNF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tpNF.setSelected(true);
         tpNF.setText("tpNF");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setText("Dados de Ide");
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel1.setText("Dados de Identificação");
 
-        indFinal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        indFinal.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         indFinal.setSelected(true);
         indFinal.setText("indFinal");
 
-        indPres.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        indPres.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         indPres.setSelected(true);
         indPres.setText("indPres");
 
-        cMunFG.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cMunFG.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         cMunFG.setSelected(true);
         cMunFG.setText("cMunFG");
 
-        tpImp.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tpImp.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tpImp.setSelected(true);
         tpImp.setText("tpImp");
 
-        tpEmis.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tpEmis.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tpEmis.setSelected(true);
         tpEmis.setText("tpEmis");
 
-        cDV.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cDV.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         cDV.setSelected(true);
         cDV.setText("cDV");
 
-        tpAmb.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        tpAmb.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         tpAmb.setSelected(true);
         tpAmb.setText("tpAmb");
 
-        finNFe.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        finNFe.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         finNFe.setSelected(true);
         finNFe.setText("finNFe");
 
-        procEmi.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        procEmi.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         procEmi.setSelected(true);
         procEmi.setText("procEmi");
 
-        verProc.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        verProc.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         verProc.setSelected(true);
         verProc.setText("verProc");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel2.setText("Dados de Prod");
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        jLabel2.setText("Dados do Produto");
 
-        cProd.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cProd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         cProd.setSelected(true);
         cProd.setText("cProd");
 
-        cEAN.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cEAN.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         cEAN.setSelected(true);
         cEAN.setText("cEAN");
 
-        xProd.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        xProd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         xProd.setSelected(true);
         xProd.setText("xProd");
 
-        NCM.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        NCM.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         NCM.setSelected(true);
         NCM.setText("NCM");
 
-        CEST.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        CEST.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         CEST.setSelected(true);
         CEST.setText("CEST");
 
-        CFOP.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        CFOP.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         CFOP.setSelected(true);
         CFOP.setText("CFOP");
 
-        qCom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        qCom.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         qCom.setSelected(true);
         qCom.setText("qCom");
 
-        vUnCom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        vUnCom.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         vUnCom.setSelected(true);
         vUnCom.setText("vUnCom");
 
-        vProd.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        vProd.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         vProd.setSelected(true);
         vProd.setText("vProd");
 
-        cEANTrib.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cEANTrib.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         cEANTrib.setSelected(true);
         cEANTrib.setText("cEANTrib");
 
-        uTrib.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        uTrib.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         uTrib.setSelected(true);
         uTrib.setText("uTrib");
 
-        qTrib.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        qTrib.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         qTrib.setSelected(true);
         qTrib.setText("qTrib");
 
-        uCom.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        uCom.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         uCom.setSelected(true);
         uCom.setText("uCom");
 
-        vUnTrib.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        vUnTrib.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         vUnTrib.setSelected(true);
         vUnTrib.setText("vUnTrib");
 
-        indTot.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        indTot.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         indTot.setSelected(true);
         indTot.setText("indTot");
 
-        btnEnviar.setText("Enviar");
+        btnEnviar.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        btnEnviar.setText("Geral XML");
         btnEnviar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEnviarActionPerformed(evt);
             }
         });
 
-        cUF.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        cUF.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         cUF.setSelected(true);
         cUF.setText("cUF");
+
+        selectXML.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        selectXML.setText("Selecionar XML");
+        selectXML.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                selectXMLActionPerformed(evt);
+            }
+        });
+
+        xmlPathInit.setText("caminho inicial");
+
+        xmlPathFinal.setText("caminho final");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel1)
+                .addGap(96, 96, 96)
+                .addComponent(jLabel2))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(cUF)
+                .addGap(85, 85, 85)
+                .addComponent(cMunFG)
+                .addGap(128, 128, 128)
+                .addComponent(cProd)
+                .addGap(36, 36, 36)
+                .addComponent(vUnCom))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(cNF)
+                .addGap(85, 85, 85)
+                .addComponent(tpImp)
+                .addGap(142, 142, 142)
+                .addComponent(cEAN)
+                .addGap(40, 40, 40)
+                .addComponent(vProd))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(natOp)
+                .addGap(65, 65, 65)
+                .addComponent(tpEmis)
+                .addGap(138, 138, 138)
+                .addComponent(xProd)
+                .addGap(36, 36, 36)
+                .addComponent(cEANTrib))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(mod)
+                .addGap(79, 79, 79)
+                .addComponent(cDV)
+                .addGap(160, 160, 160)
+                .addComponent(NCM)
+                .addGap(44, 44, 44)
+                .addComponent(uTrib))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(serie)
+                .addGap(77, 77, 77)
+                .addComponent(tpAmb)
+                .addGap(138, 138, 138)
+                .addComponent(CEST)
+                .addGap(38, 38, 38)
+                .addComponent(qTrib))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(nNF)
+                .addGap(83, 83, 83)
+                .addComponent(finNFe)
+                .addGap(140, 140, 140)
+                .addComponent(CFOP)
+                .addGap(38, 38, 38)
+                .addComponent(vUnTrib))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(dhEmi)
+                .addGap(65, 65, 65)
+                .addComponent(indFinal)
+                .addGap(130, 130, 130)
+                .addComponent(uCom)
+                .addGap(34, 34, 34)
+                .addComponent(indTot))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(dhSaiEnt)
                 .addGap(45, 45, 45)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(2, 2, 2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(natOp)
-                            .addComponent(mod)
-                            .addComponent(serie)
-                            .addComponent(nNF)
-                            .addComponent(dhEmi)
-                            .addComponent(cNF)
-                            .addComponent(dhSaiEnt)
-                            .addComponent(tpNF)
-                            .addComponent(idDest)
-                            .addComponent(cUF))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(procEmi)
-                            .addComponent(indPres, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(indFinal, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(finNFe, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tpAmb, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cDV, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tpEmis, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tpImp, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cMunFG, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(verProc, javax.swing.GroupLayout.Alignment.LEADING))))
-                .addGap(95, 95, 95)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cProd)
-                            .addComponent(cEAN)
-                            .addComponent(xProd)
-                            .addComponent(NCM)
-                            .addComponent(CEST)
-                            .addComponent(CFOP))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(qCom)
-                            .addComponent(vUnCom)
-                            .addComponent(vProd)
-                            .addComponent(qTrib)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(cEANTrib)
-                                    .addComponent(uTrib))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 183, Short.MAX_VALUE)
-                                .addComponent(btnEnviar))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(uCom)
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(indTot)
-                            .addComponent(vUnTrib))))
-                .addGap(189, 189, 189))
+                .addComponent(indPres)
+                .addGap(134, 134, 134)
+                .addComponent(qCom))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(tpNF)
+                .addGap(77, 77, 77)
+                .addComponent(procEmi))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(idDest)
+                .addGap(65, 65, 65)
+                .addComponent(verProc))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(215, 215, 215)
+                .addComponent(selectXML, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(215, 215, 215)
+                .addComponent(btnEnviar, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(xmlPathInit))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(xmlPathFinal))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(jLabel2))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(2, 2, 2)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel2))
+                .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(5, 5, 5)
-                        .addComponent(cUF)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cNF)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addComponent(natOp)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(mod)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(serie)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(nNF)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(dhEmi)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(dhSaiEnt)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(tpNF)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(idDest))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(cMunFG)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(30, 30, 30)
-                                        .addComponent(tpImp)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(tpEmis)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(cDV)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(tpAmb)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(finNFe)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(indFinal)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(indPres))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(qCom)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(vUnCom)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(vProd)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(cEANTrib)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                        .addComponent(uTrib)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
-                                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                        .addComponent(btnEnviar)
-                                                        .addGap(25, 25, 25)))
-                                                .addComponent(qTrib))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(cProd)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(cEAN)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(xProd)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(NCM)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(CEST)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(CFOP)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(vUnTrib)
-                                            .addComponent(uCom))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(indTot)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(procEmi)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(verProc)))
-                .addContainerGap(298, Short.MAX_VALUE))
+                    .addComponent(cUF)
+                    .addComponent(cMunFG)
+                    .addComponent(cProd)
+                    .addComponent(vUnCom))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(cNF)
+                    .addComponent(tpImp)
+                    .addComponent(cEAN)
+                    .addComponent(vProd))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(natOp)
+                    .addComponent(tpEmis)
+                    .addComponent(xProd)
+                    .addComponent(cEANTrib))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(mod)
+                    .addComponent(cDV)
+                    .addComponent(NCM)
+                    .addComponent(uTrib))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(serie)
+                    .addComponent(tpAmb)
+                    .addComponent(CEST)
+                    .addComponent(qTrib))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(nNF)
+                    .addComponent(finNFe)
+                    .addComponent(CFOP)
+                    .addComponent(vUnTrib))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(dhEmi)
+                    .addComponent(indFinal)
+                    .addComponent(uCom)
+                    .addComponent(indTot))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(dhSaiEnt)
+                    .addComponent(indPres)
+                    .addComponent(qCom))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tpNF)
+                    .addComponent(procEmi))
+                .addGap(5, 5, 5)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(idDest)
+                    .addComponent(verProc))
+                .addGap(42, 42, 42)
+                .addComponent(selectXML)
+                .addGap(44, 44, 44)
+                .addComponent(btnEnviar)
+                .addGap(7, 7, 7)
+                .addComponent(xmlPathInit)
+                .addGap(36, 36, 36)
+                .addComponent(xmlPathFinal))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarActionPerformed
@@ -418,9 +452,11 @@ public class FormMenu extends javax.swing.JFrame
             ///leitura do xml
             DocumentBuilderFactory dbc = DocumentBuilderFactory.newInstance();
             DocumentBuilder db = dbc.newDocumentBuilder();
-            Document doc = db.parse("D:\\Users\\higor\\Documents\\GitHub\\Nfe_XML\\nota.xml");           
+            Document doc = db.parse(xmlPathInit.getText());           
             Element raiz = doc.getDocumentElement();
             NodeList nfe = raiz.getChildNodes();
+            
+            //System.out.println(xmlPathInit.getText());
             
             
             ///grava xml
@@ -811,11 +847,13 @@ public class FormMenu extends javax.swing.JFrame
                 }
             }
             
+            salvarXML();
+            ///grava o arquivo final
             TransformerFactory tf = TransformerFactory.newInstance();
             Transformer t = tf.newTransformer();
             
             DOMSource docFonte =  new DOMSource(docXML);
-            StreamResult docFinal = new StreamResult(new File("D:\\Users\\higor\\Documents\\GitHub\\Nfe_XML\\teste.xml"));
+            StreamResult docFinal = new StreamResult(new File(xmlPathFinal.getText()+".xml"));
             
             t.transform(docFonte, docFinal);
 
@@ -832,6 +870,48 @@ public class FormMenu extends javax.swing.JFrame
         
     }//GEN-LAST:event_btnEnviarActionPerformed
 
+    private void selectXMLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_selectXMLActionPerformed
+        // TODO add your handling code here:
+        JFileChooser chooser = new JFileChooser();
+
+        chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+
+        int res = chooser.showOpenDialog(null);
+  
+        if(res == JFileChooser.APPROVE_OPTION)
+        {                   
+           File arq = chooser.getSelectedFile().getAbsoluteFile();
+           String caminho = arq.getPath();
+           JOptionPane.showMessageDialog(null, "Arquivo selecionado: " + caminho);
+           xmlPathInit.setText(caminho);
+           
+
+        } else 
+        {
+            JOptionPane.showMessageDialog(null, "Operação cancelada."); 
+        } 
+    }//GEN-LAST:event_selectXMLActionPerformed
+    
+    public void salvarXML()
+    {
+        JFileChooser chooser = new JFileChooser();
+
+        chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+
+        int res = chooser.showOpenDialog(null);
+  
+        if(res == JFileChooser.APPROVE_OPTION)
+        {                   
+           File arq = chooser.getSelectedFile().getAbsoluteFile();
+           String caminho = arq.getPath();
+           JOptionPane.showMessageDialog(null, "Arquivo selecionado: " + caminho);
+           xmlPathFinal.setText(caminho);      
+        } else 
+        {
+            JOptionPane.showMessageDialog(null, "Operação cancelada."); 
+        } 
+        
+    }
     /**
      * @param args the command line arguments
      */
@@ -895,6 +975,7 @@ public class FormMenu extends javax.swing.JFrame
     private javax.swing.JCheckBox procEmi;
     private javax.swing.JCheckBox qCom;
     private javax.swing.JCheckBox qTrib;
+    private javax.swing.JButton selectXML;
     private javax.swing.JCheckBox serie;
     private javax.swing.JCheckBox tpAmb;
     private javax.swing.JCheckBox tpEmis;
@@ -907,5 +988,7 @@ public class FormMenu extends javax.swing.JFrame
     private javax.swing.JCheckBox vUnTrib;
     private javax.swing.JCheckBox verProc;
     private javax.swing.JCheckBox xProd;
+    private javax.swing.JLabel xmlPathFinal;
+    private javax.swing.JLabel xmlPathInit;
     // End of variables declaration//GEN-END:variables
 }
