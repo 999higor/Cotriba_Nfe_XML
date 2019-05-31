@@ -48,8 +48,8 @@ public class FormMenu extends javax.swing.JFrame
     private void manipularXML(String input, String output)
     {
         
-        System.out.println(input);
-        System.out.println(output);
+        //System.out.println(input);
+        //System.out.println(output);
         try 
         {
             ///leitura do xml
