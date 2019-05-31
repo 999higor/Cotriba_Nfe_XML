@@ -27,204 +27,216 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="96" pref="96" max="-2" attributes="0"/>
-              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+          <Component id="jSeparator1" alignment="1" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cUF" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cNF" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="natOp" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="mod" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="serie" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="nNF" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="dhEmi" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="dhSaiEnt" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="tpNF" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="idDest" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cMunFG" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="tpImp" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="tpEmis" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cDV" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="tpAmb" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="finNFe" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="indFinal" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="indPres" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="procEmi" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="verProc" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cProd" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cEAN" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="xProd" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="NCM" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="CEST" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="CFOP" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="uCom" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="qCom" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="vUnCom" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="vProd" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cEANTrib" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="uTrib" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="qTrib" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="vUnTrib" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="indTot" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="cUF" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="85" pref="85" max="-2" attributes="0"/>
-              <Component id="cMunFG" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="128" pref="128" max="-2" attributes="0"/>
-              <Component id="cProd" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-              <Component id="vUnCom" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="labelSaida" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="labelEntrada" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="btnSalvar" max="32767" attributes="0"/>
+                  <Component id="selectXML" pref="171" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="cNF" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="85" pref="85" max="-2" attributes="0"/>
-              <Component id="tpImp" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="142" pref="142" max="-2" attributes="0"/>
-              <Component id="cEAN" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
-              <Component id="vProd" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="natOp" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
-              <Component id="tpEmis" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="138" pref="138" max="-2" attributes="0"/>
-              <Component id="xProd" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-              <Component id="cEANTrib" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="mod" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="79" pref="79" max="-2" attributes="0"/>
-              <Component id="cDV" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="160" pref="160" max="-2" attributes="0"/>
-              <Component id="NCM" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="44" pref="44" max="-2" attributes="0"/>
-              <Component id="uTrib" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="serie" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="77" pref="77" max="-2" attributes="0"/>
-              <Component id="tpAmb" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="138" pref="138" max="-2" attributes="0"/>
-              <Component id="CEST" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-              <Component id="qTrib" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="nNF" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="83" pref="83" max="-2" attributes="0"/>
-              <Component id="finNFe" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="140" pref="140" max="-2" attributes="0"/>
-              <Component id="CFOP" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-              <Component id="vUnTrib" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="dhEmi" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
-              <Component id="indFinal" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="130" pref="130" max="-2" attributes="0"/>
-              <Component id="uCom" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
-              <Component id="indTot" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="dhSaiEnt" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="45" pref="45" max="-2" attributes="0"/>
-              <Component id="indPres" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="134" pref="134" max="-2" attributes="0"/>
-              <Component id="qCom" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="tpNF" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="77" pref="77" max="-2" attributes="0"/>
-              <Component id="procEmi" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="idDest" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="65" pref="65" max="-2" attributes="0"/>
-              <Component id="verProc" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="215" pref="215" max="-2" attributes="0"/>
-              <Component id="selectXML" min="-2" pref="176" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="215" pref="215" max="-2" attributes="0"/>
-              <Component id="btnEnviar" min="-2" pref="176" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="xmlPathInit" min="-2" max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
-              <Component id="xmlPathFinal" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="196" max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="306" max="-2" attributes="0"/>
+                      <Component id="btnEnviar" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="197" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="2" pref="2" max="-2" attributes="0"/>
-                      <Component id="jLabel1" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="cProd" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="cEAN" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="xProd" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="NCM" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="CEST" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="CFOP" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="uCom" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="vUnCom" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="vProd" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="cEANTrib" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="uTrib" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="qTrib" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="vUnTrib" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="indTot" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Component id="qCom" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jLabel1" min="-2" pref="25" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="cUF" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="cNF" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="natOp" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="mod" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="serie" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="nNF" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="dhEmi" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="dhSaiEnt" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="tpNF" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="idDest" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="278" pref="278" max="-2" attributes="0"/>
+                              <Component id="procEmi" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                              <Component id="verProc" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="cMunFG" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="tpImp" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="tpEmis" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="cDV" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="tpAmb" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="finNFe" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="indFinal" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
+                              <Component id="indPres" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace min="26" pref="26" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="cUF" min="-2" max="-2" attributes="0"/>
-                  <Component id="cMunFG" min="-2" max="-2" attributes="0"/>
-                  <Component id="cProd" min="-2" max="-2" attributes="0"/>
-                  <Component id="vUnCom" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelEntrada" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="selectXML" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="cNF" min="-2" max="-2" attributes="0"/>
-                  <Component id="tpImp" min="-2" max="-2" attributes="0"/>
-                  <Component id="cEAN" min="-2" max="-2" attributes="0"/>
-                  <Component id="vProd" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelSaida" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btnSalvar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="natOp" min="-2" max="-2" attributes="0"/>
-                  <Component id="tpEmis" min="-2" max="-2" attributes="0"/>
-                  <Component id="xProd" min="-2" max="-2" attributes="0"/>
-                  <Component id="cEANTrib" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="mod" min="-2" max="-2" attributes="0"/>
-                  <Component id="cDV" min="-2" max="-2" attributes="0"/>
-                  <Component id="NCM" min="-2" max="-2" attributes="0"/>
-                  <Component id="uTrib" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="serie" min="-2" max="-2" attributes="0"/>
-                  <Component id="tpAmb" min="-2" max="-2" attributes="0"/>
-                  <Component id="CEST" min="-2" max="-2" attributes="0"/>
-                  <Component id="qTrib" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="nNF" min="-2" max="-2" attributes="0"/>
-                  <Component id="finNFe" min="-2" max="-2" attributes="0"/>
-                  <Component id="CFOP" min="-2" max="-2" attributes="0"/>
-                  <Component id="vUnTrib" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="dhEmi" min="-2" max="-2" attributes="0"/>
-                  <Component id="indFinal" min="-2" max="-2" attributes="0"/>
-                  <Component id="uCom" min="-2" max="-2" attributes="0"/>
-                  <Component id="indTot" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="dhSaiEnt" min="-2" max="-2" attributes="0"/>
-                  <Component id="indPres" min="-2" max="-2" attributes="0"/>
-                  <Component id="qCom" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="tpNF" min="-2" max="-2" attributes="0"/>
-                  <Component id="procEmi" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="5" pref="5" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="idDest" min="-2" max="-2" attributes="0"/>
-                  <Component id="verProc" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="42" pref="42" max="-2" attributes="0"/>
-              <Component id="selectXML" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="44" pref="44" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="btnEnviar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
-              <Component id="xmlPathInit" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-              <Component id="xmlPathFinal" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="27" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -314,7 +326,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="24" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Dados de Identifica&#xe7;&#xe3;o"/>
       </Properties>
@@ -412,7 +424,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="24" style="1"/>
+          <Font name="Tahoma" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Dados do Produto"/>
       </Properties>
@@ -555,9 +567,9 @@
     <Component class="javax.swing.JButton" name="btnEnviar">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Geral XML"/>
+        <Property name="text" type="java.lang.String" value="Gerar Arquivos XML"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEnviarActionPerformed"/>
@@ -575,22 +587,74 @@
     <Component class="javax.swing.JButton" name="selectXML">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="18" style="1"/>
+          <Font name="Tahoma" size="18" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Selecionar XML"/>
+        <Property name="text" type="java.lang.String" value="Selecionar"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="selectXMLActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="xmlPathInit">
+    <Component class="javax.swing.JButton" name="btnSalvar">
       <Properties>
-        <Property name="text" type="java.lang.String" value="caminho inicial"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Selecionar"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalvarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="66" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="99" red="99" type="rgb"/>
+        </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="xmlPathFinal">
+    <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="caminho final"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Pasta de Entrada:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Pasta de Sa&#xed;da:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="labelEntrada">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="labelSaida">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Selecione os dados para Exporta&#xe7;&#xe3;o"/>
       </Properties>
     </Component>
   </SubComponents>
