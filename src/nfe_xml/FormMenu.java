@@ -79,16 +79,16 @@ public class FormMenu extends javax.swing.JFrame
                         {                           
                             ///leitura
                             Element element = (Element) nfeChild.item(j);     
-                            String id = element.getAttribute("Id");
+                            //String id = element.getAttribute("Id");
                             //System.out.println("id :"+id);
                             NodeList infNFeChild = nfeChild.item(j).getChildNodes();
                             
                             ///gravacao root principal e attr id
                             Element infNfeGrava = docXML.createElement("infNfe");
                             docXML.appendChild(infNfeGrava);
-                            Attr idGrava = docXML.createAttribute("Id");
-                            idGrava.setValue(id);                                        
-                            infNfeGrava.setAttributeNode(idGrava);                              
+                            //Attr idGrava = docXML.createAttribute("Id");
+                            //idGrava.setValue(id);                                        
+                            //infNfeGrava.setAttributeNode(idGrava);                              
                             
                             for (int k = 0; k < infNFeChild.getLength(); k++) 
                             {
